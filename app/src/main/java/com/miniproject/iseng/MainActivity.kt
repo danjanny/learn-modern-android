@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         (application as SmartPhoneApplication).smartPhoneComponent.inject(this)
+        smartPhone.makeACallWithRecording()
 
 //        DaggerSmartPhoneComponent.create().inject(this)
 //        smartPhone.makeACallWithRecording()
